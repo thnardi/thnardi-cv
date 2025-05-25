@@ -1,9 +1,13 @@
-import { LanguageSlug } from '../types/languages'
+import { LanguageSlug } from "../types/languages";
+
+const ISSERVER = typeof window === "undefined";
 
 export const getLanguageLocalStorage = (): LanguageSlug => {
-  return localStorage.getItem('language') as LanguageSlug
-}
+  if (!ISSERVER) return localStorage.getItem("language") as LanguageSlug;
+  return "pt_br";
+};
 
 export const setLanguageLocalStorage = (language: LanguageSlug) => {
-  return localStorage.setItem('language', language)
-}
+  if (!ISSERVER) return localStorage.setItem("language", language);
+  return "pt_br";
+};
