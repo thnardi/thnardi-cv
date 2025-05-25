@@ -1,7 +1,6 @@
 import { LanguageClass, createLanguageObject } from "./types/languages-class";
 import { LanguageSlug } from "./types/languages";
 import { LanguageObject } from "./types/languages";
-import FlagIcon from "./components/FlagIcon";
 import {
   getLanguageLocalStorage,
   setLanguageLocalStorage,
@@ -9,7 +8,6 @@ import {
 
 export {
   createLanguageObject,
-  FlagIcon,
   getLanguageLocalStorage,
   setLanguageLocalStorage,
 };

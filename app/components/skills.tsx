@@ -3,8 +3,9 @@
 import { ChevronDown, ChevronUp, Code2 } from "lucide-react";
 import React, { useEffect, useState } from "react";
 import { motion } from "framer-motion";
+import { DefaultProps } from "../page.d";
 
-const Skills: React.FC = () => {
+const Skills: React.FC<DefaultProps> = ({ language }) => {
   const [skillsDesc, setSkillsDesc] = useState(false);
   const [changeOrientation, setChangeOrientation] = useState(false);
 
@@ -47,7 +48,7 @@ const Skills: React.FC = () => {
             className="text-xl font-semibold text-gray-800"
             onClick={() => setChangeOrientation(true)}
           >
-            Habilidades
+            {language.skills}
           </h3>
           {skillsDesc ? (
             <ChevronUp
@@ -62,7 +63,7 @@ const Skills: React.FC = () => {
           )}
         </div>
 
-        <div className="space-y-4" style={{ minHeight: "600px" }}>
+        <div className="space-y-4" style={{ minHeight: "500px" }}>
           {skills
             .sort((a, b) =>
               skillsDesc ? a.level - b.level : b.level - a.level

@@ -2,12 +2,16 @@
 
 import { MapPin } from "lucide-react";
 import Image from "next/image";
-import React from "react";
+import React, { FC } from "react";
 import { motion } from "framer-motion";
-import { DefaultProps } from "../page.d";
+import { LanguageSelectorProps } from "../page.d";
 import LanguageSelector from "./language-selector";
 
-const Header: FC<DefaultProps> = () => {
+const Header: FC<LanguageSelectorProps> = ({
+  language,
+  languageSlug,
+  setLanguageSlug,
+}) => {
   return (
     <motion.div
       initial={{ opacity: 0, y: 10 }}
@@ -23,32 +27,29 @@ const Header: FC<DefaultProps> = () => {
             height={150}
             className="rounded-full"
           />
+          <div className="absolute top-0 right-0 pr-4">
+            <LanguageSelector
+              language={language}
+              languageSlug={languageSlug}
+              setLanguageSlug={setLanguageSlug}
+            />
+          </div>
 
           <div className="text-center md:text-left">
             <h1 className="text-4xl font-bold bg-gradient-to-r from-blue-600 to-indigo-600 bg-clip-text text-transparent">
-              Thiago A. Nardi
+              {language.title}
             </h1>
             <h2 className="text-xl text-gray-600 mt-2">
-              Front-End Web & Mobile Developer
+              {language.description}
             </h2>
             <div className="flex items-center justify-center md:justify-start gap-2 mt-4 text-gray-500">
               <MapPin className="w-4 h-4" />
-              <span>Toledo, PR - Brasil</span>
+              <span>{language.location}</span>
             </div>
             <p className="text-gray-600 mt-4 max-w-2xl">
-              Possui +5 anos de experiência em desenvolvimento de aplicações web
-              e mobile com foco em React e React-Native. Atualmente faz parte do
-              time de desenvolvimento do app MTCIDADÃO, onde atua como
-              desenvolvedor React Pleno, tanto no front-end desktop quanto no
-              mobile.
+              {language.experienceDescription}
             </p>
           </div>
-        </div>
-        <div className="absolute top-0 right-0 p-4">
-          <LanguageSelector
-          // languageSlug={languageSlug}
-          // setLanguageSlug={setLanguageSlug}
-          />
         </div>
       </div>
     </motion.div>

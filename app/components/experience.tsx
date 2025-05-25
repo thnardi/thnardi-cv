@@ -2,62 +2,57 @@
 
 import React from "react";
 import { motion } from "framer-motion";
+import { DefaultProps } from "../page.d";
 
-const Experience = () => {
+const Experience: React.FC<DefaultProps> = ({ language }) => {
   const experiences = [
     {
-      title: "Desenvolvedor React Pleno",
-      company: "RW3 Tecnologia",
+      title: language.developerReactPleno,
+      company: language.rw3Tecnologia,
       period: "2024 - 2025",
-      description: [
-        "Sustentação e desenvolvimento de novas funcionalidades de aplicações web com React e React Native.",
-        "Experiência com publicação de Apps no Google Play e App Store.",
-        "Participação de time de desenvolvimento agile na metodologia SCRUM.",
-        "Utilização de Openshift e GCP para consulta de logs e deploy de aplicações.",
-        "Utilização de Node.js para construção de endpoints e integração com APIs.",
-      ],
+      description: [language.developerReactPlenoDescriptionP1],
     },
     {
-      title: "Desenvolvedor React Pleno",
-      company: "MTI - Empresa Mato-Grossense de Tecnologia da Informação",
+      title: language.developerReactPleno,
+      company: language.mti,
       period: "2022 - 2024",
       description: [
-        "Processo seletivo temporário (2 anos) para desenvolvedor React Pleno.",
-        "Sustentação e desenvolvimento de novas funcionalidades de aplicações web com React e React Native.",
-        "Experiência com publicação de Apps no Google Play e App Store.",
-        "Participação de time de desenvolvimento agile na metodologia SCRUM.",
-        "Utilização de Openshift e GCP para consulta de logs e deploy de aplicações.",
-        "Utilização de Node.js para construção de endpoints e integração com APIs.",
+        language.developerReactPlenoDescriptionMTIP1,
+        language.developerReactPlenoDescriptionMTIP2,
+        language.developerReactPlenoDescriptionMTIP3,
+        language.developerReactPlenoDescriptionMTIP4,
+        language.developerReactPlenoDescriptionMTIP5,
+        language.developerReactPlenoDescriptionMTIP6,
       ],
     },
     {
-      title: "Professor de Informática",
-      company: "Instituto Federal do Paraná - IFPR.",
+      title: language.computerScienceProfessor,
+      company: language.ifpr,
       period: "Jul 2018 - Dez 2018 - 6 meses",
       description: [
-        "Professor substituto do Curso técnico em informática do IFPR.",
-        "Aulas de Banco de dados, Redes, S. O. e Engenharia de Software.",
+        language.computerScienceProfessorDescriptionP1,
+        language.computerScienceProfessorDescriptionP2,
       ],
     },
     {
-      title: "Autônomo",
+      title: language.freelancer,
       company: "Farol 360",
       period: "2015 - 2022",
       description: [
-        "Apresentação e venda de projetos de sistemas web, mobile e desktop.",
-        "Programador Full Stack.",
-        "Suporte técnico aos clientes.",
-        "Lider técnico de time envolvendo até 5 pessoas (a partir de 2018).",
-        "Diversas stacks ao longo do tempo, como: PHP, Node.js, React, React Native, etc.",
+        language.freelancerDescriptionP1,
+        language.freelancerDescriptionP2,
+        language.freelancerDescriptionP3,
+        language.freelancerDescriptionP4,
+        language.freelancerDescriptionP5,
       ],
     },
     {
-      title: "Analista de Sistemas",
+      title: language.systemAnalyst,
       company: "Inviolável",
       period: "2013 - 2015",
       description: [
-        "Departamento de TI: manutenção básica de hardware e software incluindo suporte ao usuário presencialmente e via acesso remoto.",
-        "Configuração de impressoras, redes, servidores linux, entre outras atividades.",
+        language.systemAnalystDescriptionP1,
+        language.systemAnalystDescriptionP2,
       ],
     },
   ];
@@ -72,7 +67,7 @@ const Experience = () => {
         <div className="flex items-center gap-3 mb-6">
           {/* <Briefcase className="w-5 h-5 text-blue-600" /> */}
           <h3 className="text-xl font-semibold text-gray-800">
-            Work Experience
+            {language.workExperience}
           </h3>
         </div>
         <div className="space-y-6">

@@ -3,36 +3,29 @@
 import { ExternalLink, Folder } from "lucide-react";
 import React from "react";
 import { motion } from "framer-motion";
+import { DefaultProps } from "../page.d";
 
-const Projects = () => {
+const Projects: React.FC<DefaultProps> = ({ language }) => {
   const projects = [
     {
-      title: "MTCIDADAO",
+      title: language.mtcidadao,
       tech: "React, React Native, Node.js, MongoDB",
-      description:
-        "Aplicativo para o cidadão do estado do Mato Grosso. O app possui integrações com diversos órgãos como Detran e Sesp. Oferece serviços como RG Digital, CRLV, pagamento de IPVA, transferência de veículos, carteira do autista, entre outros.",
-      features: ["Biometria", "Envio de notificações", "Login com Keycloack"],
+      description: language.mtcidadaoDescription,
+      features: [language.biometry, language.notifications, language.keycloack],
       link: "https://www.mtcidadao.mt.gov.br/",
     },
     {
-      title: "SISGESP - Sistema de Gestão de Serviços Públicos",
+      title: language.sisgesp,
       tech: "React, React Native, PHP, MySQL, Slim Framework, Docker",
-      description:
-        "Sistema de Gestão de Serviços Públicos para prefeituras. Módulos de carta de Serviços, Controlde de Equipamentos e Controle de Endemias, incluíndo interface web e App. App RN com modo offline para agentes de endemia atuarem no campo (com sistema de sincronização de dados).",
+      description: language.sisgespDescription,
       features: ["Sync on/offline"],
       link: "https://play.google.com/store/apps/details?id=br.com.sisgesp.sisgespuserapp&pcampaignid=web_share",
     },
     {
-      title: "Fial Barbantes - Industria de Fios",
-      tech: "React, Weather API",
-      description:
-        "Site institucional com sistema de gerenciamento de conteúdo e integração com sistema de gestão da indústria. Através do site lojistas e representante podem solicitar pedidos direto no sistema da indústria, bem como outras funcionalidades direto do seu painel de usuário.",
-      features: [
-        "Location Services",
-        "Interactive Charts",
-        "Weather Alerts",
-        "Dark Mode",
-      ],
+      title: language.fialBarbantes,
+      tech: "PHP 8, REST API",
+      description: language.fialBarbantesDescription,
+      features: [language.restApi, language.serverSideRendering, language.php8],
       link: "https://fial.com.br/",
     },
   ];

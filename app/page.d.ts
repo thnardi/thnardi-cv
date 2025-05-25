@@ -1,5 +1,10 @@
+import { CVLanguage } from "./page.language";
+
 export interface DefaultProps {
-  languageSlug: LanguageSlug;
+  language: CVLanguage;
 }
 
-// export interface LanguageSelectorProps extends DefaultProps {}
+export interface LanguageSelectorProps extends DefaultProps {
+  languageSlug: LanguageSlug;
+  setLanguageSlug: (languageSlug: LanguageSlug) => void;
+}
