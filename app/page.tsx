@@ -17,7 +17,7 @@ export default function Home() {
   const language = languageObject.getCurrentLanguage();
 
   const [languageSlug, setLanguageSlug] = useState<LanguageSlug>(
-    getLanguageLocalStorage()
+    getLanguageLocalStorage() || "pt_br"
   );
 
   return (
