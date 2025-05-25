@@ -122,7 +122,7 @@ const language = {
     developerReactPlenoDescriptionP1:
       "Contratado pela RW3 para continuar como Desenvolvedor React e React Native na mesma equipe de desenvolvimento da MTCIDADAO após o término do contrato temporário.",
     developerReactPlenoDescriptionMTIP1:
-      "Processo seletivo temporário (2 anos) para desenvolvedor React e React Native.",
+      "Contratação temporária (2 anos) para desenvolvedor React e React Native.",
     developerReactPlenoDescriptionMTIP2:
       "Sustentação e desenvolvimento de novas funcionalidades de aplicações web com React e React Native.",
     developerReactPlenoDescriptionMTIP3:
@@ -215,7 +215,7 @@ const language = {
     developerReactPlenoDescriptionP1:
       "Contratado por RW3 para continuar como Desarrollador en el mismo equipo de desarrollo de MTCIDADAO luego de finalizar el contrato temporal",
     developerReactPlenoDescriptionMTIP1:
-      "Proceso selectivo temporal (2 años) para desarrollador React y React Native.",
+      "Contratación temporal (2 años) para desarrollador React y React Native.",
     developerReactPlenoDescriptionMTIP2:
       "Mantenimiento y desarrollo de nuevas funcionalidades para aplicaciones web con React y React Native.",
     developerReactPlenoDescriptionMTIP3:
@@ -310,7 +310,7 @@ const language = {
     developerReactPlenoDescriptionP1:
       "Hired by RW3 to continue as Developer in the same development team of MTCIDADAO after the end of temporary contract.",
     developerReactPlenoDescriptionMTIP1:
-      "Temporary selective process (2 years) for React and React Native developer.",
+      "Temporary contract (2 years) for React and React Native developer.",
     developerReactPlenoDescriptionMTIP2:
       "Maintenance and development of new features for web applications with React and React Native.",
     developerReactPlenoDescriptionMTIP3:
