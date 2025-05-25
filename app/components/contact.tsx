@@ -3,9 +3,9 @@
 import React from "react";
 import { Mail, Phone, Linkedin, Github } from "lucide-react";
 import { motion } from "framer-motion";
-import { DefaultProps } from "../page.d";
+import { ContactProps } from "../page.d";
 
-const Contact: React.FC<DefaultProps> = ({ language }) => {
+const Contact: React.FC<ContactProps> = ({ language, languageSlug }) => {
   const contacts = [
     {
       icon: Mail,
@@ -32,6 +32,20 @@ const Contact: React.FC<DefaultProps> = ({ language }) => {
       href: "https://github.com/thnardi",
     },
   ];
+
+  const handleDownloadCv = () => {
+    if (languageSlug === "pt_br") {
+      window.open("CV-Thiago-Nardi-Portuguese.pdf", "_blank");
+    }
+
+    if (languageSlug === "en_us") {
+      window.open("CV-Thiago-Nardi-English.pdf", "_blank");
+    }
+
+    if (languageSlug === "es_es") {
+      window.open("CV-Thiago-Nardi-Spanish.pdf", "_blank");
+    }
+  };
 
   return (
     <motion.div
@@ -64,7 +78,10 @@ const Contact: React.FC<DefaultProps> = ({ language }) => {
           ))}
         </div>
         <div className="mt-6 pt-6 border-t border-gray-200">
-          <button className="w-full bg-gradient-to-r from-blue-600 to-indigo-600 text-white py-3 rounded-lg hover:from-blue-700 hover:to-indigo-700 transition-all duration-200 font-medium">
+          <button
+            onClick={handleDownloadCv}
+            className="w-full bg-gradient-to-r from-blue-600 to-indigo-600 text-white py-3 rounded-lg hover:from-blue-700 hover:to-indigo-700 transition-all duration-200 font-medium"
+          >
             {language.downloadCv}
           </button>
         </div>

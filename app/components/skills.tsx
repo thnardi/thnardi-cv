@@ -21,14 +21,18 @@ const Skills: React.FC<DefaultProps> = ({ language }) => {
   const skills = [
     { name: "React", level: 95, color: "bg-blue-500" },
     { name: "React Native", level: 95, color: "bg-cyan-500" },
-    { name: "CSS/Bootstrap", level: 95, color: "bg-purple-500" },
+    { name: "Redux/Redux Toolkit", level: 95, color: "bg-purple-700" },
+    { name: "CSS/Bootstrap", level: 95, color: "bg-purple-400" },
     { name: "JavaScript/TypeScript", level: 90, color: "bg-yellow-500" },
     { name: "Git/GitHub", level: 75, color: "bg-gray-600" },
-    { name: "Docker/Docker-compose", level: 75, color: "bg-blue-600" },
-    { name: "Node.js", level: 75, color: "bg-green-500" },
-    { name: "PHP", level: 60, color: "bg-green-500" },
-    { name: "Slim Framework (PHP)", level: 80, color: "bg-green-500" },
-    { name: "CSS/Tailwind", level: 30, color: "bg-purple-500" },
+    { name: "Apache/Nginx", level: 60, color: "bg-gray-900" },
+    { name: "Docker/Docker-compose", level: 60, color: "bg-blue-600" },
+    { name: "Node.js", level: 50, color: "bg-green-500" },
+    { name: "PHP/Slim Framework", level: 75, color: "bg-green-500" },
+    { name: "PHP/Twig", level: 95, color: "bg-green-300" },
+    { name: "Java", level: 40, color: "bg-red-300" },
+    { name: "CSS/Tailwind", level: 40, color: "bg-purple-500" },
+    { name: "CSS/Material-UI", level: 60, color: "bg-gray-500" },
   ];
 
   return (

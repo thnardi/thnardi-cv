@@ -5,6 +5,7 @@
 import About from "./components/abaut";
 import Contact from "./components/contact";
 import Experience from "./components/experience";
+import Graduation from "./components/graduation";
 import Header from "./components/header";
 import Projects from "./components/projects";
 import Skills from "./components/skills";
@@ -35,10 +36,11 @@ export default function Home() {
           <div className="lg:col-span-1 space-y-6">
             <About language={language} />
             <Skills language={language} />
-            <Contact language={language} />
+            <Contact language={language} languageSlug={languageSlug} />
           </div>
           <div className="lg:col-span-2 space-y-6">
             <Experience language={language} />
+            <Graduation language={language} />
             <Projects language={language} />
           </div>
         </div>
@@ -46,9 +48,7 @@ export default function Home() {
 
       <div className="w-full h-16 bg-white shadow-lg">
         <div className="flex items-center justify-center p-5">
-          <p className="text-sm text-gray-500">
-            Desenvolvido por Thiago Nardi.
-          </p>
+          <p className="text-sm text-gray-500">{language.developedBy}</p>
         </div>
       </div>
     </div>

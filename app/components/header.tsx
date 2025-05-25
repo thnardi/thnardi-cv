@@ -19,21 +19,21 @@ const Header: FC<LanguageSelectorProps> = ({
       transition={{ duration: 0.5 }}
     >
       <div className="relative bg-white rounded-xl shadow-lg p-8 border border-gray-100">
+        <div className="absolute top-0 right-0 pr-4">
+          <LanguageSelector
+            language={language}
+            languageSlug={languageSlug}
+            setLanguageSlug={setLanguageSlug}
+          />
+        </div>
         <div className="flex flex-col md:flex-row items-center gap-6">
           <Image
             src="/profile-pic.jpeg"
             alt="Thiago"
             width={150}
             height={150}
-            className="rounded-full"
+            className="rounded-full mt-6 sm:mt-0"
           />
-          <div className="absolute top-0 right-0 pr-4">
-            <LanguageSelector
-              language={language}
-              languageSlug={languageSlug}
-              setLanguageSlug={setLanguageSlug}
-            />
-          </div>
 
           <div className="text-center md:text-left">
             <h1 className="text-4xl font-bold bg-gradient-to-r from-blue-600 to-indigo-600 bg-clip-text text-transparent">

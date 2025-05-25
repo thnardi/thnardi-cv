@@ -63,12 +63,22 @@ export interface CVLanguage extends LanguageObject {
   biometry: string;
   notifications: string;
   keycloack: string;
+  months: string;
+  developedBy: string;
+  featuredProjects: string;
+  graduation: string;
+  computerScience: string;
+  computerScienceDescription: string;
+  specializationDegree: string;
+  specializationInstitution: string;
+  computerScienceDegree: string;
+  computerScienceInstitution: string;
 }
 
 const language = {
   pt_br: {
     title: "Thiago A. Nardi",
-    description: "Desenvolvedor Full Stack",
+    description: "Desenvolvedor Front-End",
     skills: "Habilidades",
     experience: "Experiência",
     projects: "Projetos",
@@ -77,7 +87,7 @@ const language = {
     languageEn: "Inglês",
     languageEs: "Espanhol",
     experienceDescription:
-      "Possui +5 anos de experiência em desenvolvimento de aplicações web e mobile com foco em React e React-Native. Atualmente faz parte do time de desenvolvimento do app MTCIDADÃO, onde atua como desenvolvedor React Pleno, tanto no front-end desktop quanto no mobile.",
+      "+5 anos de experiência em desenvolvimento de aplicações web e mobile com foco em React e React-Native. Atualmente faz parte do time do app MTCIDADÃO, atuando como desenvolvedor React e React Native. Perfil colaborativo e com foco em entregar valor para o usuário final.",
     location: "Toledo, PR - Brasil",
     aboutMe: "Sobre mim",
     aboutMeDescriptionP1:
@@ -85,7 +95,7 @@ const language = {
     aboutMeDescriptionP2:
       "Durante este processo tive a oportunidade de atuar em todas as etapas, desde a concepção, venda desenvolvimento, implantação e manutenção, lidando diretamente com clientes e usuários.",
     aboutMeDescriptionP3:
-      "Faço parte atualmente como desenvolvedor pleno de um time focado no produto MTCIDADAO, destinado ao cidadão do estado do Mato Grosso, com +250k usuários.",
+      "Faço parte atualmente como desenvolvedor de um time focado no produto MTCIDADAO, destinado ao cidadão do estado do Mato Grosso, com +250k usuários.",
     reactAndReactNative: "React e RN",
     years: "anos",
     languageIntermediary: "Intermediário",
@@ -95,7 +105,7 @@ const language = {
     linkedin: "LinkedIn",
     github: "GitHub",
     downloadCv: "Download CV",
-    developerReactPleno: "Desenvolvedor React Pleno",
+    developerReactPleno: "Desenvolvedor React e React Native",
     computerScienceProfessor: "Professor de Informática",
     freelancer: "Autônomo",
     systemAnalyst: "Analista de Sistemas",
@@ -110,9 +120,9 @@ const language = {
     mti: "MTI - Empresa Mato-Grossense de Tecnologia da Informação",
     ifpr: "Instituto Federal do Paraná - IFPR.",
     developerReactPlenoDescriptionP1:
-      "Contratado pela RW3 para continuar como Desenvolvedor Pleno React na mesma equipe de desenvolvimento da MTCIDADAO após o término do contrato temporário.",
+      "Contratado pela RW3 para continuar como Desenvolvedor React e React Native na mesma equipe de desenvolvimento da MTCIDADAO após o término do contrato temporário.",
     developerReactPlenoDescriptionMTIP1:
-      "Processo seletivo temporário (2 anos) para desenvolvedor React Pleno.",
+      "Processo seletivo temporário (2 anos) para desenvolvedor React e React Native.",
     developerReactPlenoDescriptionMTIP2:
       "Sustentação e desenvolvimento de novas funcionalidades de aplicações web com React e React Native.",
     developerReactPlenoDescriptionMTIP3:
@@ -132,9 +142,9 @@ const language = {
     freelancerDescriptionP2: "Programador Full Stack.",
     freelancerDescriptionP3: "Suporte técnico aos clientes.",
     freelancerDescriptionP4:
-      "Lider técnico de time envolvendo até 5 pessoas (a partir de 2018).",
+      "Gestão e liderança técnica de time envolvendo 4 programadores",
     freelancerDescriptionP5:
-      "Diversas stacks ao longo do tempo, como: PHP, Node.js, React, React Native, etc.",
+      "Projetos diversos com as tecnologias PHP, Node.js, React e React Native",
     systemAnalystDescriptionP1:
       "Departamento de TI: manutenção básica de hardware e software incluindo suporte ao usuário presencialmente e via acesso remoto.",
     systemAnalystDescriptionP2:
@@ -150,10 +160,20 @@ const language = {
     biometry: "Biometria",
     notifications: "Envio de notificações",
     keycloack: "Login com Keycloack",
+    months: "meses",
+    developedBy: "Desenvolvido por Thiago Nardi.",
+    featuredProjects: "Projetos Destacados",
+    graduation: "Formação",
+    computerScience: "Bacharelado em Ciência da Computação",
+    computerScienceDescription: "Bacharelado em Ciência da Computação",
+    specializationDegree: "Especialização em Tecnologias para Aplicações Web",
+    specializationInstitution: "UNOPAR",
+    computerScienceDegree: "Bacharelado em Ciência da Computação",
+    computerScienceInstitution: "UNIOESTE",
   } as CVLanguage,
   es_es: {
     title: "Thiago A. Nardi",
-    description: "Desarrollador Full Stack",
+    description: "Desarrollador Front-End",
     skills: "Habilidades",
     experience: "Experiencia",
     projects: "Proyectos",
@@ -162,7 +182,7 @@ const language = {
     languageEn: "Inglês",
     languageEs: "Español",
     experienceDescription:
-      "Tiene más de 5 años de experiencia en el desarrollo de aplicaciones web y móviles con enfoque en React y React-Native. Actualmente forma parte del equipo de desarrollo del app MTCIDADÃO, donde trabaja como desarrollador React Pleno, tanto en el front-end de escritorio como en el móvil.",
+      "+5 años de experiencia en el desarrollo de aplicaciones web y móviles con enfoque en React y React-Native. Actualmente forma parte del equipo del app MTCIDADÃO, trabaja como desarrollador React y React Native. Perfil colaborativo y enfocado en entregar valor al usuario final.",
     location: "Toledo, PR - Brasil",
     aboutMe: "Acerca de mí",
     aboutMeDescriptionP1:
@@ -170,8 +190,8 @@ const language = {
     aboutMeDescriptionP2:
       "Durante este proceso tuve la oportunidad de trabajar en todas las etapas, desde la concepción, venta, desarrollo, implementación y mantenimiento, tratando directamente con clientes y usuarios.",
     aboutMeDescriptionP3:
-      "Actualmente formo parte como desarrollador pleno de un equipo enfocado en el producto MTCIDADAO, destinado al ciudadano del estado de Mato Grosso, con +250k usuarios.",
-    reactAndReactNative: "React e RN",
+      "Actualmente formo parte como desarrollador de un equipo enfocado en el producto MTCIDADAO, destinado al ciudadano del estado de Mato Grosso, con +250k usuarios.",
+    reactAndReactNative: "React y RN",
     years: "años",
     languageIntermediary: "Intermedio",
     languageBasic: "Básico",
@@ -180,7 +200,7 @@ const language = {
     linkedin: "LinkedIn",
     github: "GitHub",
     downloadCv: "Descargar CV",
-    developerReactPleno: "Desarrollador React Pleno",
+    developerReactPleno: "Desarrollador React y React Native",
     computerScienceProfessor: "Profesor de Informática",
     freelancer: "Autónomo",
     systemAnalyst: "Analista de Sistemas",
@@ -193,9 +213,9 @@ const language = {
     mti: "MTI - Empresa Mato-Grossense de Tecnologia da Informação",
     ifpr: "Instituto Federal do Paraná - IFPR.",
     developerReactPlenoDescriptionP1:
-      "Contratado por RW3 para continuar como Desarrollador Completo de React en el mismo equipo de desarrollo de MTCIDADAO luego de finalizar el contrato temporal",
+      "Contratado por RW3 para continuar como Desarrollador en el mismo equipo de desarrollo de MTCIDADAO luego de finalizar el contrato temporal",
     developerReactPlenoDescriptionMTIP1:
-      "Proceso selectivo temporal (2 años) para desarrollador React Pleno.",
+      "Proceso selectivo temporal (2 años) para desarrollador React y React Native.",
     developerReactPlenoDescriptionMTIP2:
       "Mantenimiento y desarrollo de nuevas funcionalidades para aplicaciones web con React y React Native.",
     developerReactPlenoDescriptionMTIP3:
@@ -215,11 +235,11 @@ const language = {
     freelancerDescriptionP2: "Programador Full Stack.",
     freelancerDescriptionP3: "Soporte técnico a los clientes.",
     freelancerDescriptionP4:
-      "Líder técnico de equipos involucrando hasta 5 personas (desde 2018).",
+      "Gestión y liderazgo técnico de un equipo de 4 programadores",
     freelancerDescriptionP5:
-      "Diversas tecnologías a lo largo del tiempo, como: PHP, Node.js, React, React Native, etc.",
+      "Projetos diversos com as tecnologias PHP, Node.js, React e React Native",
     systemAnalystDescriptionP1:
-      "Departamento de TI: mantenimiento básico de hardware y software incluyendo soporte al usuario presencial y por acceso remoto.",
+      "Departamento de TI: manutenção básica de hardware e software incluindo suporte ao usuário presencialmente e via acesso remoto.",
     systemAnalystDescriptionP2:
       "Configuración de impresoras, redes, servidores Linux, entre otras actividades.",
     workExperience: "Experiencia Profesional",
@@ -235,10 +255,20 @@ const language = {
     biometry: "Biometría",
     notifications: "Envío de notificaciones",
     keycloack: "Inicio de sesión con Keycloack",
+    months: "meses",
+    developedBy: "Desarrollado por Thiago Nardi.",
+    featuredProjects: "Proyectos Destacados",
+    graduation: "Formación",
+    computerScience: "Bachillerato en Ciencia de la Computación",
+    computerScienceDescription: "Bachillerato en Ciencia de la Computación",
+    specializationDegree: "Especialización en Tecnología para Aplicaciones Web",
+    specializationInstitution: "UNOPAR",
+    computerScienceDegree: "Bachillerato en Ciencia de la Computación",
+    computerScienceInstitution: "UNIOESTE",
   } as CVLanguage,
   en_us: {
     title: "Thiago A. Nardi",
-    description: "Full Stack Developer",
+    description: "Front-End Developer",
     skills: "Skills",
     experience: "Experience",
     projects: "Projects",
@@ -247,7 +277,7 @@ const language = {
     languageEn: "English",
     languageEs: "Spanish",
     experienceDescription:
-      "+5 years of experience in web and mobile application development with focus on React and React-Native. Currently in the development team of the MTCIDADÃO app, where works as Plain React Developer.",
+      "+5 years of experience in web and mobile application development with focus on React and React-Native. Currently part of the team of the MTCIDADÃO app, working as React and React Native Developer. Collaborative profile and focused on delivering value to the final user.",
     location: "Toledo, PR - Brazil",
     aboutMe: "About me",
     aboutMeDescriptionP1:
@@ -265,7 +295,7 @@ const language = {
     linkedin: "LinkedIn",
     github: "GitHub",
     downloadCv: "Download CV",
-    developerReactPleno: "React Developer",
+    developerReactPleno: "React and React Native Developer",
     computerScienceProfessor: "Computer Science Professor",
     freelancer: "Freelancer",
     systemAnalyst: "System Analyst",
@@ -278,9 +308,9 @@ const language = {
     mti: "MTI - Empresa Mato-Grossense de Tecnologia da Informação",
     ifpr: "Instituto Federal do Paraná - IFPR.",
     developerReactPlenoDescriptionP1:
-      "Hired by RW3 to continue as React Full Developer in the same development team of MTCIDADAO after the end of temporary contract.",
+      "Hired by RW3 to continue as Developer in the same development team of MTCIDADAO after the end of temporary contract.",
     developerReactPlenoDescriptionMTIP1:
-      "Temporary selective process (2 years) for React Pleno developer.",
+      "Temporary selective process (2 years) for React and React Native developer.",
     developerReactPlenoDescriptionMTIP2:
       "Maintenance and development of new features for web applications with React and React Native.",
     developerReactPlenoDescriptionMTIP3:
@@ -300,9 +330,9 @@ const language = {
     freelancerDescriptionP2: "Full Stack Developer.",
     freelancerDescriptionP3: "Technical support for clients.",
     freelancerDescriptionP4:
-      "Technical leader of teams involving up to 5 people (from 2018).",
+      "Management and technical leadership of a team involving 4 programmers",
     freelancerDescriptionP5:
-      "Various stacks over time, such as: PHP, Node.js, React, React Native, etc.",
+      "Various projects with technologies such as PHP, Node.js, React and React Native",
     systemAnalystDescriptionP1:
       "IT Department: basic hardware and software maintenance including on-site and remote user support.",
     systemAnalystDescriptionP2:
@@ -320,6 +350,16 @@ const language = {
     biometry: "Biometry",
     notifications: "Notifications",
     keycloack: "Keycloack Login",
+    months: "months",
+    developedBy: "Developed by Thiago Nardi.",
+    featuredProjects: "Featured Projects",
+    graduation: "Graduation",
+    computerScience: "Bachelor of Science in Computer Science",
+    computerScienceDescription: "Bachelor of Science in Computer Science",
+    specializationDegree: "Specialization in Tecnology for Web Applications",
+    specializationInstitution: "UNOPAR",
+    computerScienceDegree: "Bachelor of Science in Computer Science",
+    computerScienceInstitution: "UNIOESTE",
   } as CVLanguage,
 };
 

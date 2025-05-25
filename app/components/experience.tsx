@@ -28,7 +28,7 @@ const Experience: React.FC<DefaultProps> = ({ language }) => {
     {
       title: language.computerScienceProfessor,
       company: language.ifpr,
-      period: "Jul 2018 - Dez 2018 - 6 meses",
+      period: "Jul 2018 - Dez 2018 - 6 " + language.months,
       description: [
         language.computerScienceProfessorDescriptionP1,
         language.computerScienceProfessorDescriptionP2,

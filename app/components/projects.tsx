@@ -40,7 +40,7 @@ const Projects: React.FC<DefaultProps> = ({ language }) => {
         <div className="flex items-center gap-3 mb-6">
           <Folder className="w-5 h-5 text-blue-600" />
           <h3 className="text-xl font-semibold text-gray-800">
-            Projetos Destacados
+            {language.featuredProjects}
           </h3>
         </div>
         <div className="grid gap-6">
