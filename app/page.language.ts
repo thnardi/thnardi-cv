@@ -87,7 +87,7 @@ const language = {
     languageEn: "Inglês",
     languageEs: "Espanhol",
     experienceDescription:
-      "+5 anos de experiência em desenvolvimento de aplicações web e mobile com foco em React e React-Native. Atualmente faz parte do time do app MTCIDADÃO, atuando como desenvolvedor React e React Native. Perfil colaborativo e com foco em entregar valor para o usuário final.",
+      "+5 anos de experiência em desenvolvimento de aplicações web e mobile com foco em React e React-Native. Atualmente faz parte do time do app MTCIDADÃO como desenvolvedor React e React Native. Perfil colaborativo e com foco em entregar valor para o usuário final.",
     location: "Toledo, PR - Brasil",
     aboutMe: "Sobre mim",
     aboutMeDescriptionP1:

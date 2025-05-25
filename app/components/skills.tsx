@@ -30,7 +30,6 @@ const Skills: React.FC<DefaultProps> = ({ language }) => {
     { name: "Node.js", level: 50, color: "bg-green-500" },
     { name: "PHP/Slim Framework", level: 75, color: "bg-green-500" },
     { name: "PHP/Twig", level: 95, color: "bg-green-300" },
-    { name: "Java", level: 40, color: "bg-red-300" },
     { name: "CSS/Tailwind", level: 40, color: "bg-purple-500" },
     { name: "CSS/Material-UI", level: 60, color: "bg-gray-500" },
   ];
