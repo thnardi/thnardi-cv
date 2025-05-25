@@ -15,6 +15,7 @@ const geistMono = Geist_Mono({
 export const metadata: Metadata = {
   title: "Thiago Nardi",
   description: "Thiago Nardi - Front-End Web & Mobile Developer",
+  icons: "/favicon.ico",
 };
 
 export default function RootLayout({
