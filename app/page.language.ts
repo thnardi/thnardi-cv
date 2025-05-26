@@ -93,7 +93,7 @@ const language = {
     aboutMeDescriptionP1:
       "Comecei em 2015 como freelancer em projetos de website para pequenas empresas da minha cidade. Gradativamente os projetos foram se tornando mais complexos e a minha experiência foi se expandindo.",
     aboutMeDescriptionP2:
-      "Durante este processo tive a oportunidade de atuar em todas as etapas, desde a concepção, venda desenvolvimento, implantação e manutenção, lidando diretamente com clientes e usuários.",
+      "Durante este processo tive a oportunidade de atuar em todas as etapas, desde a concepção, venda, desenvolvimento, implantação e manutenção, lidando diretamente com clientes e usuários.",
     aboutMeDescriptionP3:
       "Faço parte atualmente como desenvolvedor de um time focado no produto MTCIDADAO, destinado ao cidadão do estado do Mato Grosso, com +250k usuários.",
     reactAndReactNative: "React e RN",
