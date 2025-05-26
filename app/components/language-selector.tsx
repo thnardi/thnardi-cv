@@ -1,6 +1,6 @@
 "use client";
 
-import { FC, useState } from "react";
+import { FC, useEffect, useRef, useState } from "react";
 import { LanguageSelectorProps } from "../page.d";
 
 import { LanguageSlug, setLanguageLocalStorage } from "languages-module";
@@ -18,6 +18,22 @@ const LanguageSelector: FC<LanguageSelectorProps> = ({
   const closeDropdown = () => {
     setIsOpen(false);
   };
+
+  const ref = useRef<HTMLDivElement>(null);
+
+  useEffect(() => {
+    const handleClickOutside = (event: MouseEvent) => {
+      console.log("handleClickOutside", ref, event);
+      if (
+        event.target instanceof HTMLElement &&
+        event.target.id.includes("language-selector")
+      ) {
+      } else {
+        closeDropdown();
+      }
+    };
+    document.addEventListener("mousedown", handleClickOutside);
+  }, [ref]);
 
   const languages = [
     {
@@ -48,6 +64,7 @@ const LanguageSelector: FC<LanguageSelectorProps> = ({
         <button
           className="px-4 py-2 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm inline-flex items-center"
           onClick={toggleDropdown}
+          id="language-selector"
         >
           {languageSelected?.language} {languageSelected?.flag}
           <svg
@@ -82,6 +99,7 @@ const LanguageSelector: FC<LanguageSelectorProps> = ({
                   <li key={lang.slug}>
                     <button
                       type="button"
+                      id={`language-selector-item-${lang.slug}`}
                       className="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100 w-full"
                       onClick={() => {
                         setLanguageLocalStorage(lang.slug as LanguageSlug);
