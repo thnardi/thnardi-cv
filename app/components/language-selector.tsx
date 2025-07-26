@@ -58,6 +58,12 @@ const LanguageSelector: FC<LanguageSelectorProps> = ({
 
   const languageSelected = languages.find((lang) => lang.slug === languageSlug);
 
+  useEffect(() => {
+    setLanguageLocalStorage(languageSlug);
+
+    // eslint-disable-next-line react-hooks/exhaustive-deps
+  }, []);
+
   return (
     <div className="w-full py-6 pb-8">
       <div className="relative inline-block">
@@ -105,6 +111,9 @@ const LanguageSelector: FC<LanguageSelectorProps> = ({
                         setLanguageLocalStorage(lang.slug as LanguageSlug);
                         closeDropdown();
                         setLanguageSlug(lang.slug as LanguageSlug);
+                        const url = new URL(window.location.href);
+                        url.searchParams.delete("l");
+                        window.history.replaceState({}, "", url);
                       }}
                     >
                       {lang.language} {lang.flag}

@@ -23,7 +23,7 @@ const Contact: React.FC<ContactProps> = ({ language, languageSlug }) => {
       icon: Linkedin,
       label: language.linkedin,
       value: "/in/thiago-nardi",
-      href: "https://www.linkedin.com/in/thiago-nardi-a154a355/",
+      href: "https://www.linkedin.com/in/thnardi/",
     },
     {
       icon: Github,
