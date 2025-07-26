@@ -111,9 +111,11 @@ const LanguageSelector: FC<LanguageSelectorProps> = ({
                         setLanguageLocalStorage(lang.slug as LanguageSlug);
                         closeDropdown();
                         setLanguageSlug(lang.slug as LanguageSlug);
-                        const url = new URL(window.location.href);
-                        url.searchParams.delete("l");
-                        window.history.replaceState({}, "", url);
+                        if (typeof window !== "undefined") {
+                          const url = new URL(window.location.href);
+                          url.searchParams.delete("l");
+                          window.history.replaceState({}, "", url);
+                        }
                       }}
                     >
                       {lang.language} {lang.flag}

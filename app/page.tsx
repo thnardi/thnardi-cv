@@ -16,10 +16,19 @@ import { useState } from "react";
 export default function Home() {
   const language = languageObject.getCurrentLanguage();
 
-  const queryParams = new URLSearchParams(window.location.search);
-  const l = queryParams.get("l");
-  const paramLang =
-    l === "en" ? "en_us" : l === "pt" ? "pt_br" : l === "es" ? "es_es" : false;
+  let paramLang: LanguageSlug | false = false;
+  if (typeof window !== "undefined") {
+    const queryParams = new URLSearchParams(window.location.search);
+    const l = queryParams.get("l");
+    paramLang =
+      l === "en"
+        ? "en_us"
+        : l === "pt"
+        ? "pt_br"
+        : l === "es"
+        ? "es_es"
+        : false;
+  }
 
   const [languageSlug, setLanguageSlug] = useState<LanguageSlug>(
     paramLang || getLanguageLocalStorage() || "pt_br"
